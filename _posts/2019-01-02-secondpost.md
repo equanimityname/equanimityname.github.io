@@ -1,6 +1,18 @@
 ---
 layout: review
-author: jill
+
+author: Dalai Lama XIV
+author_image: DalaiLama.jpg
+author_bio: "A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa."
+
+book_title: The Art of Happiness
+publish_date: October 26th 1998
+number_of_pages: 336
+
+categories: [books]
+tags: [spiritual, laymans]
+
+main_blockquote: "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared."
 ---
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.
