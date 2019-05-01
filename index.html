@@ -1,10 +1,30 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
-</html>
+---
+layout: default
+title: Meditate by the book
+---
+<!-- start parallax scrolling section -->
+<section class="extra-big-section parallax" data-stellar-background-ratio="0.5" style="background-image: url('{{ baseurl }}/assets/images/mainparallaxbgimage.jpg')">
+    <div class="opacity-medium bg-black"></div>           
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-7 col-md-11 text-center">                        
+                <div class="alt-font text-medium-gray text-uppercase text-small margin-20px-bottom">LOLA verde</div>
+                <h5 class="text-light-gray alt-font margin-40px-bottom sm-margin-30px-bottom">Estrategia. Diseño. Contenido. Tecnología</h5>
+                <a href="#" class="btn btn-medium btn-white btn-rounded">Contáctanos</a>
+            </div>                    
+        </div>
+    </div>
+</section>
+<section>
+        <h1>Latest Posts</h1>
+
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              <p>{{ post.excerpt }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+</section>
+<!-- end parallax scrolling section -->
