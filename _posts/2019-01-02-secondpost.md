@@ -6,6 +6,7 @@ author_image: DalaiLama.jpg
 author_bio: "A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa."
 
 book_title: The Art of Happiness
+book_cover_image: ArtOfHappiness.jpg
 publish_date: October 26th 1998
 number_of_pages: 336
 
@@ -13,6 +14,28 @@ categories: [books]
 tags: [spiritual, laymans]
 
 main_blockquote: "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared."
+
+review_overview: ["This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records"]
+
+skill_level_score: 25
+approach_score: 30
+writing_score: 20
+vocabulary_score: 15
+outlook_score: 75
+affiliation_score: 50
+
+skill_level: ""
+approach: ""
+writing: ""
+vocabulary: ""
+outlook: ""
+affiliation: ""
+
+techniques: ""
+
+quotes: ["test quote 0 hehe","test quote 1"]
+
+conclusion: ""
 ---
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.
