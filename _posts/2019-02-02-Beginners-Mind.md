@@ -11,25 +11,28 @@ publish_date: October 26th 1998
 number_of_pages: 336
 
 categories: [books]
-tags: [spiritual, laymans]
+tags: [spiritual, laymans, concise]
 
-main_blockquote: "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared."
+first_blockquote: "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared."
+second_blockquote: "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared."
+third_blockquote: "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared."
 
 review_overview: ["This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","aThis book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records"]
 
-skill_level_score: 25
+skill_level: beginner
+approach: practical theoretical
+outlook: spiritual
+affiliation: open
+
+skill_level_score: 50
 approach_score: 30
-writing_score: 20
-vocabulary_score: 15
 outlook_score: 75
 affiliation_score: 50
 
-skill_level: ""
-approach: ""
-writing: ""
-vocabulary: ""
-outlook: ""
-affiliation: ""
+skill_level_overview: ["This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records"]
+approach_overview: ["This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records"]
+outlook_overview: ["This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records"]
+affiliation_overview: ["This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records","This book is very good because it was created by the dalai lama and no one is better and its a bestseller many times over with platinum records"]
 
 techniques: ""
 
