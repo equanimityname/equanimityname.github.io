@@ -163,30 +163,6 @@ function parallax_text() {
     }
 }
 
-/*==============================================================*/
-//Search - START CODE
-/*==============================================================*/
-function ScrollStop() {
-    return false;
-}
-function ScrollStart() {
-    return true;
-}
-function validationSearchForm() {
-    var error = true;
-    $('#search-header input[type=text]').each(function (index) {
-        if (index === 0) {
-            if ($(this).val() === null || $(this).val() === "") {
-                $("#search-header").find("input:eq(" + index + ")").css({"border": "none", "border-bottom": "2px solid red"});
-                error = false;
-            } else {
-                $("#search-header").find("input:eq(" + index + ")").css({"border": "none", "border-bottom": "2px solid #000"});
-            }
-        }
-    });
-    return error;
-}
-
 /*==============================================================
  //Parallax - START CODE
  ==============================================================*/
