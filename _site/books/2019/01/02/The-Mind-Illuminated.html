@@ -20,15 +20,15 @@
     <!-- animation 
     <link rel="stylesheet" href="/assets/css/animate.css" />-->
     <!-- bootstrap -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css" /> -->
     <!-- et line icon 
     <link rel="stylesheet" href="/assets/css/et-line-icons.css" />--> 
     <!-- font-awesome icon -->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/font-awesome.min.css" /> -->
     <!-- themify icon 
     <link rel="stylesheet" href="/assets/css/themify-icons.css">-->
     <!-- swiper carousel -->
-    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/swiper.min.css"> -->
     <!-- justified gallery 
     <link rel="stylesheet" href="/assets/css/justified-gallery.min.css"> -->
     <!-- magnific popup 
@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css">-->
     <!-- bootsnav -->
-    <link rel="stylesheet" href="/assets/css/bootsnav.css">
+    <!-- <link rel="stylesheet" href="/assets/css/bootsnav.css"> -->
     <!-- style -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
     <!-- responsive css -->
-    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/responsive.css" /> -->
     <!-- jquery datatables css-->
     <link rel="stylesheet" type="text/css" href="/assets/css/datatables.min.css"/>
     <!--[if IE]>
@@ -484,7 +484,7 @@ retina
 <!-- <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script> -->
 <!-- jquery datatables -->
-<script type="text/javascript" src="/assets/js/datatables.min.js"></script>
+<!-- <script type="text/javascript" src="/assets/js/datatables.min.js"></script> -->
 
 
 <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
@@ -500,13 +500,15 @@ retina
 <!-- setting -->
 <script type="text/javascript" src="/assets/js/main.js" async></script>
 
-<script type="text/javascript" async>
+<script type="text/javascript">
 var bookResultsTable;
 var skillLevelFilter = "0";
 var approachFilter = "0";
 var outlookFilter = "0";
 var affiliationFilter = "0";
 $(document).ready( function () {
+        console.log("on");
+        console.log("in");
 	bookResultsTable = $('#bookResults').DataTable({
 			paging: false,
 			ordering: false,
@@ -518,6 +520,19 @@ $(document).ready( function () {
 	);
 	resetFilters();
 });
+function loadStyleSheet(src) {
+        console.log("out");
+    if (document.createStyleSheet){
+        document.createStyleSheet(src);
+    }
+    else {
+        loadcss = document.createElement('link');
+        loadcss.setAttribute("rel", "stylesheet");
+        loadcss.setAttribute("type", "text/css");
+        loadcss.setAttribute("href", src);
+        document.getElementsByTagName("head")[0].appendChild(loadcss);
+    }
+};
 function resetFilters(){        
 	filterBookResults();
 	skillLevelFilter = "";
@@ -620,6 +635,15 @@ function filterSectarian(){
 	}
 	filterBookResults();
 }
+</script>
+<script type="text/javascript" async>
+    loadStyleSheet("/assets/css/bootstrap.min.css");
+    loadStyleSheet("/assets/css/font-awesome.min.css");
+    loadStyleSheet("/assets/css/swiper.min.css");
+    loadStyleSheet("/assets/css/bootsnav.css");
+    loadStyleSheet("/assets/css/style.css");
+    loadStyleSheet("/assets/css/responsive.css");
+    loadStyleSheet("/assets/css/datatables.min.css");
 </script>  
     </body>
 </html>

@@ -46,7 +46,7 @@ retina
 <!-- <script type="text/javascript" src="{{ baseurl }}/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="{{ baseurl }}/assets/revolution/js/jquery.themepunch.revolution.min.js"></script> -->
 <!-- jquery datatables -->
-<script type="text/javascript" src="{{ baseurl }}/assets/js/datatables.min.js"></script>
+<!-- <script type="text/javascript" src="{{ baseurl }}/assets/js/datatables.min.js"></script> -->
 
 
 <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
@@ -62,13 +62,15 @@ retina
 <!-- setting -->
 <script type="text/javascript" src="{{ baseurl }}/assets/js/main.js" async></script>
 
-<script type="text/javascript" async>
+<script type="text/javascript">
 var bookResultsTable;
 var skillLevelFilter = "0";
 var approachFilter = "0";
 var outlookFilter = "0";
 var affiliationFilter = "0";
 $(document).ready( function () {
+        console.log("on");
+        console.log("in");
 	bookResultsTable = $('#bookResults').DataTable({
 			paging: false,
 			ordering: false,
@@ -80,6 +82,19 @@ $(document).ready( function () {
 	);
 	resetFilters();
 });
+function loadStyleSheet(src) {
+        console.log("out");
+    if (document.createStyleSheet){
+        document.createStyleSheet(src);
+    }
+    else {
+        loadcss = document.createElement('link');
+        loadcss.setAttribute("rel", "stylesheet");
+        loadcss.setAttribute("type", "text/css");
+        loadcss.setAttribute("href", src);
+        document.getElementsByTagName("head")[0].appendChild(loadcss);
+    }
+};
 function resetFilters(){        
 	filterBookResults();
 	skillLevelFilter = "";
@@ -182,4 +197,13 @@ function filterSectarian(){
 	}
 	filterBookResults();
 }
+</script>
+<script type="text/javascript" async>
+    loadStyleSheet("{{ baseurl }}/assets/css/bootstrap.min.css");
+    loadStyleSheet("{{ baseurl }}/assets/css/font-awesome.min.css");
+    loadStyleSheet("{{ baseurl }}/assets/css/swiper.min.css");
+    loadStyleSheet("{{ baseurl }}/assets/css/bootsnav.css");
+    loadStyleSheet("{{ baseurl }}/assets/css/style.css");
+    loadStyleSheet("{{ baseurl }}/assets/css/responsive.css");
+    loadStyleSheet("{{ baseurl }}/assets/css/datatables.min.css");
 </script>
