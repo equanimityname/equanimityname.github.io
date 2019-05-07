@@ -23,6 +23,9 @@ function loadStyleSheet(src) {
         loadStyleSheet("{{ baseurl }}/assets/css/style.css");
         loadStyleSheet("{{ baseurl }}/assets/css/responsive.css");
         loadStyleSheet("{{ baseurl }}/assets/css/datatables.min.css");
+        loadStyleSheet("{{ baseurl }}/assets/css/retina.min.css");
+        loadStyleSheet("{{ baseurl }}/assets/css/jquery.magnific-popup.css");
+        loadStyleSheet("{{ baseurl }}/assets/css/font-awesome.min.css");
 
         bookResultsTable = $('#bookResults').DataTable({
                 paging: false,
