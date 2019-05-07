@@ -338,9 +338,9 @@
 <!-- parallax -->
 <script type="text/javascript" src="/assets/js/jquery.stellar.js" async></script>
 <!-- magnific popup -->
-<!-- <script type="text/javascript" src="/assets/js/jquery.magnific-popup.min.js"></script> -->
+<script type="text/javascript" src="/assets/js/jquery.magnific-popup.min.js"></script>
 <!-- portfolio with shorting tab-->
-<!-- <script type="text/javascript" src="/assets/js/isotope.pkgd.min.js"></script>  -->
+<script type="text/javascript" src="/assets/js/isotope.pkgd.min.js"></script>
 <!-- images loaded -->
 <script type="text/javascript" src="/assets/js/imagesloaded.pkgd.min.js" async></script> 
 <!-- pull menu -->
@@ -364,7 +364,7 @@ retina
 <!-- <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script> -->
 <!-- jquery datatables -->
-<script type="text/javascript" src="/assets/js/datatables.min.js" async></script>
+<script type="text/javascript" src="/assets/js/datatables.min.js"></script>
 
 
 <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
@@ -378,7 +378,128 @@ retina
 <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
 <!-- setting -->
-<script type="text/javascript" src="/assets/js/main.js"async ></script>
-<script type="text/javascript" src="/assets/js/custom.js" async></script>  
+<script type="text/javascript" src="/assets/js/main.js" async></script>
+
+<script type="text/javascript" async>
+var bookResultsTable;
+var skillLevelFilter = "0";
+var approachFilter = "0";
+var outlookFilter = "0";
+var affiliationFilter = "0";
+$(document).ready( function () {
+	bookResultsTable = $('#bookResults').DataTable({
+			paging: false,
+			ordering: false,
+			info: false,
+			"columnDefs": [
+				{ "visible": false, "targets": [2,3,4,5] }
+			]
+		}
+	);
+	resetFilters();
+});
+function resetFilters(){        
+	filterBookResults();
+	skillLevelFilter = "";
+	approachFilter = "";
+	outlookFilter = "";
+	affiliationFilter = "";
+}
+function filterBookResults(){ 
+	if (skillLevelFilter == "" && approachFilter == "" && outlookFilter == "" && affiliationFilter == ""){
+		skillLevelFilter = "0";
+		approachFilter = "0";
+		outlookFilter = "0";
+		affiliationFilter = "0";
+		resetFilters();
+	}
+	else{
+		bookResultsTable.columns(2).search(skillLevelFilter).draw();
+		bookResultsTable.columns(3).search(approachFilter).draw();
+		bookResultsTable.columns(4).search(outlookFilter).draw();
+		bookResultsTable.columns(5).search(affiliationFilter).draw();
+	}        
+}
+function filterBeginner(){
+	$("#advancedButton").removeClass('active');
+	if ($("#beginnerButton").hasClass('active')){
+		skillLevelFilter = "";
+	}
+	else {
+		skillLevelFilter = "beginner"
+	}
+	filterBookResults();
+}
+function filterAdvanced(){
+	$("#beginnerButton").removeClass('active');
+	if ($("#advancedButton").hasClass('active')){
+		skillLevelFilter = "";
+	}
+	else {
+		skillLevelFilter = "advanced"
+	}
+	filterBookResults();
+}
+function filterTheoretical(){
+	$("#practicalButton").removeClass('active');
+	if ($("#theoreticalButton").hasClass('active')){
+		approachFilter = "";
+	}
+	else {
+		approachFilter = "theoretical"
+	}
+	filterBookResults();
+}
+function filterPractical(){
+	$("#theoreticalButton").removeClass('active');
+	if ($("#practicalButton").hasClass('active')){
+		approachFilter = "";
+	}
+	else {
+		approachFilter = "practical"
+	}
+	filterBookResults();
+}
+function filterSecular(){
+	$("#spiritualButton").removeClass('active');
+	if ($("#secularButton").hasClass('active')){
+		outlookFilter = "";
+	}
+	else {
+		outlookFilter = "secular"
+	}
+	filterBookResults();
+}
+function filterSpiritual(){
+	$("#secularButton").removeClass('active');
+	if ($("#spiritualButton").hasClass('active')){
+		outlookFilter = "";
+	}
+	else {
+		outlookFilter = "spiritual"
+	}
+	filterBookResults();
+}
+function filterOpen(){
+	$("#sectarianButton").removeClass('active');
+	if ($("#openButton").hasClass('active')){
+		affiliationFilter = "";
+	}
+	else {
+		affiliationFilter = "open"
+	}
+	filterBookResults();
+}
+function filterSectarian(){
+	$("#openButton").removeClass('active');
+	if ($("#sectarianButton").hasClass('active')){
+		affiliationFilter = "";
+	}
+	else {
+		affiliationFilter = "sectarian"
+	}
+	filterBookResults();
+}
+</script>  
     </body>
 </html>
