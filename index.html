@@ -3,8 +3,10 @@ layout: default
 title: Meditate by the book
 ---
 <section class="bg-light-gray padding-two-bottom">
-    <h6>Find the book that suits you!</h6>
     <div class="container text center">
+        <div class="row  justify-content-center">
+            <h5 class="alt-font text-deep-pink font-weight-600">Find the book that suits you!</h5>
+        </div>
         <div class="row">
             <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
                 <span class="text-medium text-extra-dark-gray alt-font font-weight-600 margin-10px-bottom d-block">Skill Level</span>
@@ -74,9 +76,45 @@ title: Meditate by the book
     </div>  
 </section>
 <section class="bg-light-gray padding-two-all wow fadeIn">
-    <h6>Latest Reviews</h6>
     <div class="container">
+        <div class="row  justify-content-center">
+            <h5 class="alt-font text-deep-pink font-weight-600">Latest Reviews</h5>
+        </div>
         <div class="row blog-post-style4 justify-content-center" align="center">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
+                <ul class="blog-grid blog-3col gutter-large">
+                    <li class="grid-sizer"></li>                    
+                    {% for post in site.posts limit:3 %}
+                    <!-- start post item -->
+                    <li class="grid-item wow fadeInUp">
+                        <figure>
+                            <div class="blog-img bg-extra-dark-gray">
+                                <a href="{{ post.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ post.book_cover_image }}" alt="" ></a>
+                            </div>
+                            <figcaption>
+                                <div class="portfolio-hover-main text-left">
+                                    <div class="blog-hover-box align-bottom">
+                                        <span class="post-author text-extra-small text-medium-gray text-uppercase d-block margin-5px-bottom sm-margin-5px-bottom">by <a href="blog-classic.html" class="text-medium-gray">{{ post.author }} (falta link)</a></span>
+                                        <h6 class="alt-font d-block text-white-2 font-weight-600 mb-0"><a href="{{ post.url }}" class="text-white-2 text-deep-pink-hover">{{ post.book_title }}</a></h6>
+                                        <p class="text-medium-gray margin-10px-top blog-hover-text">{{ post.first_blockquote}}</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- end post item -->
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white padding-two-all wow fadeIn">
+    <div class="container-flex">
+        <div class="row justify-content-center">
+            <h5 class="alt-font text-deep-pink font-weight-600">Popular Books</h5>
+        </div>
+        <div class="row blog-post-style4">
             <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
                 <ul class="blog-grid blog-3col gutter-large">
                     <li class="grid-sizer"></li>                    
