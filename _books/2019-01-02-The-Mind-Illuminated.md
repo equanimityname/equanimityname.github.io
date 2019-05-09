@@ -1,10 +1,12 @@
 ---
 layout: review
-
+permalink: Books/TheMindIlluminated
+title: The Mind Illuminated Review
 author: 	"Culadasa (John Yates)"
 author_image: 	"Culadasa (John Yates).jpg"
 author_bio: 	"Culadasa (John Yates, Ph.D.) is the director of Dharma Treasure Buddhist Sangha in Tucson, Arizona and author of The Mind Illuminated: A Complete Meditation Guide Using Buddhist Wisdom and Brain Science (Dharma Treasure Press, October 6, 2015). A meditation master with over four decades of experience in the Tibetan and Theravadin Buddhist traditions, Culadasa was ordained as an Upasaka (dedicated lay-practitioner) in 1976 and received ordination in the International Order of Buddhist ministers in Rosemead, California in December 2009."
 book_title: 	"The Mind Illuminated: A Complete Meditation Guide Integrating Buddhist Wisdom and Brain Science"
+book_title_short: "The Mind Illuminated"
 book_cover_image: 	"TheMindIlluminated.jpg"
 publish_date: 	October 6th 2015
 number_of_pages: 	504
@@ -26,5 +28,5 @@ approach_overview: 	["When it comes to approach, the book manages to structure t
 outlook_overview: 	["As you would expect from the pencil of a Ph. D. who became an Upasaka, or dedicated lay-practitioner, the book balances neuroscience, philosophy, and Buddhist teachings without pushing a specific agenda too much. This is not to say that the religion or sect of the author is kept a secret, as we'll discuss in the next point..."]
 affiliation_overview: 	["It could be argued that Culadasa is a teacher and the head of a Buddhist Shanga himself and so this book should fall in the sectarian category, however the instructions themselves are provided in plain English whenever possible.","While the above holds true, Buddhist terminology is presented frequently to establish a clear link to the past and thousand year old terms take on a new life for 21st century readers. Followers of any current and non-followers alike will still appreciate the openness of the teachings and the down to earth way in which they're expounded."]
 techniques: 	[mindfulness, vippasana, samatha, walking meditation, awareness, anapanasati]
-conclusion: 	["The Mind Illuminated joins the rank of great classics like BOOK 3 and Book 4 bringing to the fore a path that feels surprisingly accesible. If you want to connect on a more spiritual level, We'd recommend you to take a look at something like BOOK 1 or BOOK 2 instead."]
+conclusion: 	["The Mind Illuminated joins the rank of great classics bringing to the fore a path that feels surprisingly accessible. If you want to connect on a more spiritual level, We'd recommend you to take a look at <a href='/Books/TheHeartOfTheBuddhasTeaching'>The Heart of the Buddha's Teaching</a> instead."]
 ---

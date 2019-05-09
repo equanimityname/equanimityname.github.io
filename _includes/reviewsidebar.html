@@ -31,12 +31,12 @@
         <div class="margin-45px-bottom sm-margin-25px-bottom">
             <div class="text-extra-dark-gray margin-25px-bottom alt-font text-uppercase font-weight-600 text-small aside-title"><span>Popular books</span></div>
             <ul class="latest-post position-relative">            
-                {% for post in site.posts limit:4 %}
+                {% for book in site.books limit:4 %}
                 <li class="media">
                     <figure>
-                        <a href="{{ post.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ post.book_cover_image }}" alt=""></a>
+                        <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt=""></a>
                     </figure>
-                    <div class="media-body text-small"><a href="{{ post.url }}" class="text-extra-dark-gray"><span class="d-inline-block margin-5px-bottom">{{ post.book_title }}</span></a> <span class="d-block text-medium-gray text-small">{{ post.date | date: '%B %d, %Y' }}</span></div>
+                    <div class="media-body text-small"><a href="{{ book.url }}" class="text-extra-dark-gray"><span class="d-inline-block margin-5px-bottom">{{ book.book_title }}</span></a> <span class="d-block text-medium-gray text-small">{{ book.date | date: '%B %d, %Y' }}</span></div>
                 </li>
                 {% endfor %}
             </ul>
