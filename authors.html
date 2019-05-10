@@ -2,3 +2,32 @@
 layout: default
 title: MbtB - Authors
 ---
+
+<section class="wow fadeIn bg-light-gray padding-five-tb page-title-small top-space padding-one-top padding-one-bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+                {% for author in site.authors %}
+                <div class="col-3 col-lg-3 col-md-3 col-sm-1 col-xs-1 team-block text-left team-style-1 margin-40px-bottom md-margin-seven-bottom sm-margin-30px-bottom wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <figure>
+                        <div class="team-image sm-width-100">
+                            <img src="{{ baseurl }}/assets/images/authors/{{ author.author_image }}" style="display: block; margin-left: auto; margin-right: auto;" class="justify-content-center" alt="" data-no-retina="">
+                            <div class="overlay-content text-center d-flex align-items-end justify-content-center">
+                                <div class="icon-social-large padding-twelve-all">
+                                    <span class="text-white-2 text-small d-inline-block m-0">{{ author.short_quote }}</span>
+                                    <div class="separator-line-horrizontal-full bg-deep-pink margin-eleven-tb"></div>
+                                    <a href="/{{ author.permalink }}" class="text-white-2"><i class="fas fa-info-circle"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-overlay bg-extra-dark-gray opacity8"></div>
+                        </div>
+                        <figcaption>
+                            <div class="team-member-position margin-20px-top text-center">
+                                <div class="text-small font-weight-500 text-extra-dark-gray text-uppercase"><a href="/{{ author.permalink }}" target="_blank">{{ author.author_name }}</a></div>
+                            </div>   
+                        </figcaption>
+                    </figure>
+                </div>
+                {% endfor %}
+        </div>
+    </div>
+</section>

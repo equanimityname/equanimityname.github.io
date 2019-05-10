@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<!-- start post content section --> 
+<section class="margin-two-top padding-two-top">
+    <div class="container">
+        <div class="row">
+            <main class="col-12 col-lg-9 right-sidebar md-margin-60px-bottom sm-margin-40px-bottom pl-0 md-no-padding-right">
+                <section class="margin-5px-top margin-5px-bottom padding-5px-top padding-5px-bottom">
+                    <!-- start review overview -->
+                    <div class="col-12 text-center text-md-left padding-five-top">
+                        <figure class="wp-caption alignright">
+                            <img alt="" src="{{ baseurl }}/assets/images/authors/{{ page.author_image_large }}" data-no-retina="">
+                            <figcaption class="wp-caption-text"><i>{{ page.author_name }}</i> portrait.</figcaption>
+                        </figure>
+                        <span class="text-medium alt-font font-weight-600 margin-20px-bottom d-block text-extra-dark-gray">Biography</span>
+                        {% for bioParagraph in page.author_bio %}
+                            <p class="text-large">{{ bioParagraph }}</p>
+                        {% endfor %}
+                    </div>
+                    <!-- end review overview -->
+                </section>
+            </main>       
+
+            {% include reviewsidebar.html%}
+        </div>
+    </div>
+</section>
