@@ -1,11 +1,11 @@
 ---
-permalink: 	Books/TheMindIlluminated
+permalink: 	Books/the-mind-illuminated
 layout: 	review
 title: 	"The Mind Illuminated Review"
 author: 	"Culadasa (John Yates)"
 author_image: 	"Culadasa (John Yates).jpg"
 author_bio: 	"Culadasa (John Yates, Ph.D.) is the director of Dharma Treasure Buddhist Sangha in Tucson, Arizona and author of The Mind Illuminated: A Complete Meditation Guide Using Buddhist Wisdom and Brain Science (Dharma Treasure Press, October 6, 2015). A meditation master with over four decades of experience in the Tibetan and Theravadin Buddhist traditions, Culadasa was ordained as an Upasaka (dedicated lay-practitioner) in 1976 and received ordination in the International Order of Buddhist ministers in Rosemead, California in December 2009."
-author_bio_link: "/Authors/JohnYatesCuladasa"
+author_bio_link: "/Authors/john-yates-culadasa"
 book_title: 	"The Mind Illuminated: A Complete Meditation Guide Integrating Buddhist Wisdom and Brain Science"
 book_title_short: 	"The Mind Illuminated"
 book_cover_image: 	"TheMindIlluminated.jpg"
@@ -30,6 +30,6 @@ outlook_overview: 	["As you would expect from the pencil of a Ph.D. who became U
 affiliation_overview: ["It could be argued that Culadasa is a teacher and the head of a Buddhist Shanga himself and so this book should be categorized as sectarian, but the instructions themselves are provided free of any kind spiritual baggage and plain english is used whenever possible."]
 techniques: 	[mindfulness, vipassana, samatha, walking meditation, awareness, anapanasati]
 conclusion: 	["The Mind Illuminated joins the rank of great classics bringing to the fore a path that feels surprisingly accessible. If you want to connect on a more spiritual level, We'd recommend you to take a look at <a href='/Books/TheHeartOfTheBuddhasTeaching'>The Heart of the Buddha's Teaching</a> instead."]
-amazon_affiliate_link: 	
+amazon_affiliate_link: 	https://amzn.to/2HexYha
 goodreads_link: 	"https://www.goodreads.com/book/show/25942786-the-mind-illuminated"
 ---

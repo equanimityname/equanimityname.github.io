@@ -2282,9 +2282,9 @@ header.sticky nav.header-light-transparent .logo .logo-light, header.sticky nav.
 .navbar-top-scroll {position: absolute; top: 0; z-index: 5;}
 header.sticky nav.navbar-top-scroll {background-color: inherit;}
 header a.logo {display: inline-block; vertical-align: middle;}
-header a.logo img {max-height:26px;}
+header a.logo img {max-height:60px;}
 header .left-nav .sidebar-part1 a.logo img {max-height:inherit;}
-.logo-holder img {max-height: 26px;}
+.logo-holder img {max-height: 60px;}
 
 /* header animation */
 .navbar-top { position: fixed;top: 0; left: 0; right: 0; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; }

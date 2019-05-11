@@ -1,5 +1,5 @@
 ---
-permalink: 	Authors/HenepolaGunaratana
+permalink: 	Authors/henepola-gunaratana
 layout: 	author
 title: 	Henepola Gunaratana Biography
 author_name: 	Henepola Gunaratana

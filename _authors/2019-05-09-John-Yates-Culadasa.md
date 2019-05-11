@@ -1,5 +1,5 @@
 ---
-permalink: 	Authors/JohnYatesCuladasa
+permalink: 	Authors/john-yates-culadasa
 layout: 	author
 title: 	John Yates (Culadasa) Biography
 author_name: 	John Yates (Culadasa)

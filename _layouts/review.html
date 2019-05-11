@@ -1,85 +1,39 @@
 ---
 layout: default
 ---
-<!-- start page title section -->
-<section class="wow fadeIn bg-light-gray padding-five-tb page-title-small top-space padding-one-top padding-one-bottom">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-8 col-md-6 d-flex flex-column justify-content-center text-center text-md-left">
-                <!-- start page title -->
-                <h1 class="alt-font text-extra-dark-gray font-weight-600 mb-0 text-uppercase">{{ page.book_title }}</h1>
-                <!-- end page title -->
-                <!-- start separator line -->
-                    <div class="separator-line-horrizontal-full bg-extra-light-gray width-100"></div>
-                <!-- end separator line -->  
-                <!-- start breadcrumb -->
-                <div class="col-xl-12 col-md-12 col-xs-12 col-sm-12 col-12 alt-font padding-three-top">
-                    <ul class="text-center text-md-left">
-                        <li><span class="text-dark-gray">Publish Date: {{ page.publish_date }}</span></li>
-                        <li><span class="text-dark-gray">Number of Pages: {{ page.number_of_pages }}</span></li>
-                    </ul>
-                </div>
-                <!-- end breadcrumb -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end page title section -->
 <!-- start post content section --> 
 <section class="margin-two-top padding-two-top">
     <div class="container">
         <div class="row">
-            <main class="col-12 col-lg-9 right-sidebar md-margin-60px-bottom sm-margin-40px-bottom pl-0 md-no-padding-right">
-                <section class="margin-5px-top margin-5px-bottom padding-5px-top padding-5px-bottom">
-                    <!-- start author -->
-                    <div class="col-12">
-                        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start width-100 border border-color-extra-light-gray padding-50px-all md-padding-30px-all sm-padding-20px-all">
-                            <div class="width-150px text-center sm-margin-15px-bottom sm-width-100">
-                                <img src="{{ baseurl }}/assets/images/authors/{{ page.author_image }}" class="rounded-circle width-100px" alt="" />
-                            </div>
-                            <div class="width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left text-center text-md-left">
-                                <a href="#" class="text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block text-small">Author: {{ page.author}}</a>
-                                <p class="md-width-95 sm-width-100">{{ page.author_bio}}</p>
-                                <a href="{{ page.author_bio_link }}" class="btn btn-very-small btn-black margin-20px-top">More about the author</a>                            
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end author -->
+            <main class="col-12 col-lg-9 right-sidebar md-margin-60px-bottom sm-margin-40px-bottom pl-0 md-no-padding-right">                
 
-                    <!-- start review overview -->
-                    <div class="col-12 text-center text-md-left padding-five-top">
-                        <figure class="wp-caption alignright">
-                            <img alt="" src="{{ baseurl }}/assets/images/bookcovers/{{ page.book_cover_image }}" data-no-retina="">
-                            <figcaption class="wp-caption-text"><i>{{ page.book_title }}</i> book cover.</figcaption>
-                        </figure>
-                        <span class="text-medium alt-font font-weight-600 margin-20px-bottom d-block text-extra-dark-gray">Overview</span>
-                        {% for overviewParagraph in page.review_overview %}
-                            <p class="text-large">{{ overviewParagraph }}</p>
-                        {% endfor %}
-                    </div>
-                    <!-- end review overview -->
-
-                    <!-- start blockquote -->
-                    <div class="col-12">
-                        <blockquote class="border-color-deep-pink">
-                            <p><i>{{ page.first_blockquote }}</i></p>
-                            <footer>Excerpt from <i>{{ page.book_title }}</i>.</footer>
-                        </blockquote>
-                    </div>     
-                    <!-- end blockquote -->  
-                </section>
-                
                 <!-- start classification overview -->
                 <section class="wow fadeIn parallax big-section" data-stellar-background-ratio="0.4" style="background-image: url(&quot;{{baseurl}}/assets/images/mainparallaxbgimage.jpg&quot;); visibility: visible; animation-name: fadeIn;">
-                    <div class="opacity-medium bg-extra-dark-gray"></div>
                     <div class="container">
+                    <div class="row align-items-center justify-content-center ">
+                            <div class="col-12 col-md-12 col-sm-12 col-xs-12">
+                            <!-- start page title -->
+                                <h1 class="alt-font text-deep-pink font-weight-600" align="center">{{ page.book_title }}</h1>
+                            </div>
+                            <!-- end page title -->
+                            <!-- start separator line -->
+                            <div class="separator-line-horrizontal-full bg-extra-light-gray width-100"></div>
+                            <!-- end separator line -->  
+                            <!-- start breadcrumb -->
+                            <div class="col-xl-12 col-md-12 col-xs-12 col-sm-12 col-12 alt-font padding-three-top">
+                                <ul class="text-center">
+                                    <li><span class="text-white">Publish Date: {{ page.publish_date }}</span></li>
+                                    <li><span class="text-white">Number of Pages: {{ page.number_of_pages }}</span></li>
+                                </ul>
+                            </div>
+                            <!-- end breadcrumb -->
+                        </div>
                         <div class="row">
                             <div class="col-12 col-lg-8 col-md-10 mx-auto">
                                 <div class="bg-white padding-two-all">
-                                    <h5 class="font-weight-600 alt-font text-extra-dark-gray text-center">Classification</h5>
                                     <div class="row justify-content-center">
                                         <div class="col-12 col-lg-8 col-md-10 col-sm-10 text-center padding-five-bottom">                                                
-                                            <div class="row justify-content-center"><span><b>Skill Level</b></span></div>
+                                            <div class="row justify-content-center padding-six-top"><span><b>Skill Level</b></span></div>
                                             <div class="row justify-content-center">
                                                 <div class="col-3">
                                                     <span>Beginner</span>                                                    
@@ -142,12 +96,65 @@ layout: default
                                 </div>
                             </div>
                         </div>
-                    </div>
+                </div>
                 </section>  
-                <!-- end classification overview -->     
+                <!-- end classification overview --> 
+                
+                <section class="margin-5px-top margin-5px-bottom padding-5px-top padding-5px-bottom">
+                    <!-- start author -->
+                    <div class="col-12 no-padding-lr">
+                        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start width-100 border border-color-extra-light-gray padding-50px-all md-padding-30px-all sm-padding-20px-all">
+                            <div class="width-150px text-center sm-margin-15px-bottom sm-width-100">
+                                <img src="{{ baseurl }}/assets/images/authors/{{ page.author_image }}" class="rounded-circle width-100px" alt="" />
+                            </div>
+                            <div class="width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left text-center text-md-left">
+                                <a href="#" class="text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block text-small">Author: {{ page.author}}</a>
+                                <p class="md-width-95 sm-width-100">{{ page.author_bio}}</p>
+                                <a href="{{ page.author_bio_link }}" class="btn btn-very-small btn-black margin-20px-top">More about the author</a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end author -->
+                </section>
+
+                <section class="wow fadeIn padding-one-all" style="visibility: visible; animation-name: fadeIn;">
+                    <!-- start review overview -->
+                    <div class="col-12 text-center text-md-left padding-five-top">
+                        <figure class="wp-caption alignright">
+                            <img alt="" src="{{ baseurl }}/assets/images/bookcovers/{{ page.book_cover_image }}" data-no-retina="">
+                            <figcaption class="wp-caption-text"><i>{{ page.book_title }}</i> book cover.</figcaption>
+                        </figure>
+                        <span class="text-medium alt-font font-weight-600 margin-20px-bottom d-block text-extra-dark-gray">Overview</span>
+                        {% for overviewParagraph in page.review_overview %}
+                            <p class="text-large">{{ overviewParagraph }}</p>
+                        {% endfor %}
+                    </div>
+                    <!-- end review overview -->
+
+                    <!-- start blockquote -->
+                    <div class="col-12">
+                        <blockquote class="border-color-deep-pink">
+                            <p><i>{{ page.first_blockquote }}</i></p>
+                            <footer>Excerpt from <i>{{ page.book_title }}</i>.</footer>
+                        </blockquote>
+                    </div>     
+                    <!-- end blockquote -->  
+                </section>
+                 
+                <section class="wow fadeIn cover-background half-section" style="background-image: url(&quot;{{ baseurl }}/assets/images/call-to-action-bg.jpg&quot;); visibility: visible; animation-name: fadeIn;">
+                    <div class="opacity-medium bg-extra-dark-gray"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <span class="text-extra-large text-white-2 alt-font d-inline-block margin-5px-top margin-30px-right md-margin-15px-bottom sm-no-margin-right sm-no-margin-top sm-margin-15px-bottom sm-width-100">Take a look at the table of contents to learn more</span>
+                                <a href="{{ page.amazon_affiliate_link }}" class="btn btn-white btn-small align-top sm-no-margin-right">See this book on Amazon.com</a>
+                            </div>                    
+                        </div>
+                    </div>
+                </section>   
                 
                 <!-- start classification detail -->
-                <section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <section class="wow fadeIn padding-five-tb" style="visibility: visible; animation-name: fadeIn;">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-10 mx-auto text-center text-md-left">
@@ -211,6 +218,18 @@ layout: default
                             </div>                        
                         </div>
                 </section>
+                 
+                <section class="wow fadeIn cover-background half-section" style="background-image: url(&quot;{{ baseurl }}/assets/images/call-to-action-bg.jpg&quot;); visibility: visible; animation-name: fadeIn;">
+                    <div class="opacity-medium bg-extra-dark-gray"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <span class="text-extra-large text-white-2 alt-font d-inline-block margin-5px-top margin-30px-right md-margin-15px-bottom sm-no-margin-right sm-no-margin-top sm-margin-15px-bottom sm-width-100">Is this book for you? Start reading it today</span>
+                                <a href="{{ page.amazon_affiliate_link }}" class="btn btn-white btn-small align-top sm-no-margin-right">Buy on Amazon.com</a>
+                            </div>                    
+                        </div>
+                    </div>
+                </section> 
                 <!-- end classification detail -->
             </main>       
 

@@ -5,7 +5,9 @@ title: Meditate by the book
 <section class="bg-light-gray padding-two-bottom">
     <div class="container text center">
         <div class="row  justify-content-center">
-            <h5 class="alt-font text-deep-pink font-weight-600">Find the book that suits you!</h5>
+            <div class="width-100 justify-content-center" align="center">
+                <h5 class="alt-font text-deep-pink font-weight-600 padding-three-bottom"><i class="fas fa-reply fa-rotate-270"></i>  Find a book that suits you!  <i class="fas fa-share fa-rotate-90"></i></h5>
+            </div>
         </div>
         <div class="row">
             <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
@@ -58,7 +60,7 @@ title: Meditate by the book
                                     </td>
                                     <td>                             
                                         <p><b>Title:</b> <a href="{{ book.url }}">{{ book.book_title }}</a></p>
-                                        <p><b>Author:</b> {{ book.author }} (read more about the author)</p>
+                                        <p><b>Author:</b> <a href="{{ book.author_bio_link }}">{{ book.author }}</a></p>
                                         <p><b>Release Date:</b> {{ book.publish_date }}</p>
                                         <p><a href="{{ book.url }}" class="btn btn-primary btn-sm">Is it for me?</a></p>
                                     </td>
@@ -78,7 +80,7 @@ title: Meditate by the book
 <section class="bg-light-gray padding-two-all wow fadeIn">
     <div class="container">
         <div class="row  justify-content-center">
-            <h5 class="alt-font text-deep-pink font-weight-600">Latest Reviews</h5>
+            <h5 class="alt-font text-deep-pink font-weight-600 padding-three-bottom">Latest Reviews</h5>
         </div>
         <div class="row blog-post-style4 justify-content-center">
             <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8">
@@ -94,7 +96,7 @@ title: Meditate by the book
                             <figcaption>
                                 <div class="portfolio-hover-main text-left">
                                     <div class="blog-hover-box align-bottom">
-                                        <span class="post-author text-extra-small text-medium-gray text-uppercase d-block margin-5px-bottom sm-margin-5px-bottom">by <a href="blog-classic.html" class="text-medium-gray">{{ book.author }} (falta link)</a></span>
+                                        <span class="post-author text-extra-small text-medium-gray text-uppercase d-block margin-5px-bottom sm-margin-5px-bottom">by <a href="{{ book.author_bio_link }}" class="text-medium-gray">{{ book.author }}</a></span>
                                         <h6 class="alt-font d-block text-white-2 font-weight-600 mb-0"><a href="{{ book.url }}" class="text-white-2 text-deep-pink-hover">{{ book.book_title_short }}</a></h6>
                                         <p class="text-medium-gray margin-10px-top blog-hover-text">{{ book.first_blockquote}}</p>
                                     </div>
@@ -112,7 +114,7 @@ title: Meditate by the book
 <section class="bg-white padding-two-all wow fadeIn">
     <div class="container-flex">
         <div class="row justify-content-center">
-            <h5 class="alt-font text-deep-pink font-weight-600">Popular Books</h5>
+            <h5 class="alt-font text-deep-pink font-weight-600 padding-three-bottom">Popular Books</h5>
         </div>
         <div class="row blog-post-style4 justify-content-center">
             <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8">
@@ -128,7 +130,7 @@ title: Meditate by the book
                             <figcaption>
                                 <div class="portfolio-hover-main text-left">
                                     <div class="blog-hover-box align-bottom">
-                                        <span class="post-author text-extra-small text-medium-gray text-uppercase d-block margin-5px-bottom sm-margin-5px-bottom">by <a href="blog-classic.html" class="text-medium-gray">{{ book.author }} (falta link)</a></span>
+                                        <span class="post-author text-extra-small text-medium-gray text-uppercase d-block margin-5px-bottom sm-margin-5px-bottom">by <a href="{{ book.author_bio_link }}" class="text-medium-gray">{{ book.author }}</a></span>
                                         <h6 class="alt-font d-block text-white-2 font-weight-600 mb-0"><a href="{{ book.url }}" class="text-white-2 text-deep-pink-hover">{{ book.book_title_short }}</a></h6>
                                         <p class="text-medium-gray margin-10px-top blog-hover-text">{{ book.first_blockquote}}</p>
                                     </div>

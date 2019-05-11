@@ -1,5 +1,5 @@
 ---
-permalink: 	Authors/ThichNanhHanh
+permalink: 	Authors/thich-nanh-hanh
 layout: 	author
 title: 	Thich Nanh Hanh Biography
 author_name: 	Thich Nanh Hanh
