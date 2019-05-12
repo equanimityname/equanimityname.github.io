@@ -86,7 +86,8 @@ title: Meditate by the book
             <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8">
                 <ul class="blog-grid blog-3col gutter-large">
                     <li class="grid-sizer"></li>                    
-                    {% for book in site.books limit:3 %}
+                    {% assign sortedBooks = site.books | reverse %}
+                    {% for book in sortedBooks limit:3 %}
                     <!-- start post item -->
                     <li class="grid-item wow fadeInUp">
                         <figure>
@@ -98,7 +99,7 @@ title: Meditate by the book
                                     <div class="blog-hover-box align-bottom">
                                         <span class="post-author text-extra-small text-medium-gray text-uppercase d-block margin-5px-bottom sm-margin-5px-bottom">by <a href="{{ book.author_bio_link }}" class="text-medium-gray">{{ book.author }}</a></span>
                                         <h6 class="alt-font d-block text-white-2 font-weight-600 mb-0"><a href="{{ book.url }}" class="text-white-2 text-deep-pink-hover">{{ book.book_title_short }}</a></h6>
-                                        <p class="text-medium-gray margin-10px-top blog-hover-text">{{ book.first_blockquote}}</p>
+                                        <p class="text-medium-gray margin-10px-top blog-hover-text"><i>"{{ book.first_blockquote}}"</i></p>
                                     </div>
                                 </div>
                             </figcaption>
@@ -132,7 +133,7 @@ title: Meditate by the book
                                     <div class="blog-hover-box align-bottom">
                                         <span class="post-author text-extra-small text-medium-gray text-uppercase d-block margin-5px-bottom sm-margin-5px-bottom">by <a href="{{ book.author_bio_link }}" class="text-medium-gray">{{ book.author }}</a></span>
                                         <h6 class="alt-font d-block text-white-2 font-weight-600 mb-0"><a href="{{ book.url }}" class="text-white-2 text-deep-pink-hover">{{ book.book_title_short }}</a></h6>
-                                        <p class="text-medium-gray margin-10px-top blog-hover-text">{{ book.first_blockquote}}</p>
+                                        <p class="text-medium-gray margin-10px-top blog-hover-text"><i>"{{ book.first_blockquote}}"</i></p>
                                     </div>
                                 </div>
                             </figcaption>
