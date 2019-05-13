@@ -56,7 +56,7 @@ title: Meditate by the book
                             {% for book in site.books %}
                                 <tr>
                                     <td>
-                                        <img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}"/> 
+                                        <img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image"/> 
                                     </td>
                                     <td>                             
                                         <p><b>Title:</b> <a href="{{ book.url }}">{{ book.book_title }}</a></p>
@@ -92,7 +92,7 @@ title: Meditate by the book
                     <li class="grid-item wow fadeInUp">
                         <figure>
                             <div class="blog-img bg-extra-dark-gray">
-                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="" ></a>
+                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image" ></a>
                             </div>
                             <figcaption>
                                 <div class="portfolio-hover-main text-left">
@@ -126,7 +126,7 @@ title: Meditate by the book
                     <li class="grid-item wow fadeInUp">
                         <figure>
                             <div class="blog-img bg-extra-dark-gray">
-                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="" ></a>
+                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image" ></a>
                             </div>
                             <figcaption>
                                 <div class="portfolio-hover-main text-left">
