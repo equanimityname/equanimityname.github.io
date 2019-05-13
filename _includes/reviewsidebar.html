@@ -12,7 +12,7 @@
         </div>
         <div class="margin-45px-bottom sm-margin-25px-bottom">
             <div class="text-extra-dark-gray margin-20px-bottom alt-font text-uppercase text-small font-weight-600 aside-title"><span>About Us</span></div>
-            <img src="{{ baseurl }}/assets/images/aboutUsSidebar.jpg" alt="meditation center image" class="margin-25px-bottom"/></a>
+            <img src="{{ baseurl }}/assets/images/bookcovers/350x500.svg" data-src="{{ baseurl }}/assets/images/aboutUsSidebar.jpg" alt="meditation center image" class="margin-25px-bottom"/></a>
             <p class="margin-20px-bottom text-small">We are a non-affiliated meditation center located in Massachusetts, formed by people from all different kinds of backgrounds and practices.</p>
         </div>
         <div class="margin-50px-bottom">
@@ -34,7 +34,7 @@
                 {% for book in site.books limit:4 %}
                 <li class="media">
                     <figure>
-                        <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image"></a>
+                        <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/350x500.svg" data-src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image"></a>
                     </figure>
                     <div class="media-body text-small"><a href="{{ book.url }}" class="text-extra-dark-gray"><span class="d-inline-block margin-5px-bottom">{{ book.book_title }}</span></a> <span class="d-block text-medium-gray text-small">{{ book.date | date: '%B %d, %Y' }}</span></div>
                 </li>
@@ -47,7 +47,7 @@
                 {% for author in site.authors limit:4 %}
                 <li class="media">
                     <figure>
-                        <a href="{{ author.url }}"><img src="{{ baseurl }}/assets/images/authors/{{ author.author_image }}" alt=""></a>
+                        <a href="{{ author.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/350x500.svg" data-src="{{ baseurl }}/assets/images/authors/{{ author.author_image }}" alt=""></a>
                     </figure>
                     <div class="media-body text-small"><a href="{{ author.url }}" class="text-extra-dark-gray"><span class="d-inline-block margin-5px-bottom">{{ author.author_name }}</span></a> <span class="d-block text-medium-gray text-small"><i>"{{ author.short_quote }}"</i></span></div>
                 </li>

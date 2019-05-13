@@ -56,7 +56,7 @@ title: Meditate by the book
                             {% for book in site.books %}
                                 <tr>
                                     <td>
-                                        <img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image"/> 
+                                        <img class="bookTableItem" src="{{ baseurl }}/assets/images/bookcovers/350x500.svg" data-src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image"/> 
                                     </td>
                                     <td>                             
                                         <p><b>Title:</b> <a href="{{ book.url }}">{{ book.book_title }}</a></p>
@@ -92,7 +92,7 @@ title: Meditate by the book
                     <li class="grid-item wow fadeInUp">
                         <figure>
                             <div class="blog-img bg-extra-dark-gray">
-                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image" ></a>
+                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/350x500.svg" data-src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image" ></a>
                             </div>
                             <figcaption>
                                 <div class="portfolio-hover-main text-left">
@@ -126,7 +126,7 @@ title: Meditate by the book
                     <li class="grid-item wow fadeInUp">
                         <figure>
                             <div class="blog-img bg-extra-dark-gray">
-                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image" ></a>
+                                <a href="{{ book.url }}"><img src="{{ baseurl }}/assets/images/bookcovers/350x500.svg" data-src="{{ baseurl }}/assets/images/bookcovers/{{ book.book_cover_image }}" alt="{{ book.book_title }} cover image" ></a>
                             </div>
                             <figcaption>
                                 <div class="portfolio-hover-main text-left">
@@ -146,3 +146,6 @@ title: Meditate by the book
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    var targetNode=document.getElementById("bookResults"),config={attributes:!0,childList:!0,subtree:!0},callback=function(e,t){for(var r of e)if("childList"==r.type)for(var a=document.getElementsByClassName("bookTableItem"),o=0;o<a.length;o++)a[o].getAttribute("data-src")&&a[o].setAttribute("src",a[o].getAttribute("data-src"))},observer=new MutationObserver(callback);observer.observe(targetNode,config);
+</script>
