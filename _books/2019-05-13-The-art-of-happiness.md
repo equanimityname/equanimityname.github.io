@@ -9,7 +9,7 @@ author_bio: 	"Jetsun Jamphel Ngawang Lobsang Yeshe Tenzin Gyatso (born Lhamo Dö
 Tenzin Gyatso was the fifth of sixteen children born to a farming family. He was proclaimed the tulku (an Enlightened lama who has consciously decided to take rebirth) of the 13th Dalai Lama at the age of two.
 
 Tenzin Gyatso is a charismatic figure and noted public speaker. This Dalai Lama is the first to travel to the West. There, he has helped to spread Buddhism and to promote the concepts of universal responsibility, secular ethics, and religious harmony."
-author_bio_link: 	
+author_bio_link: 	"/Authors/dalai-lama-xiv"
 book_title: 	"The Art of Happiness: A Handbook for Living"
 book_title_short: 	"The Art of Happiness"
 book_cover_image: 	ArtOfHappiness.jpg
