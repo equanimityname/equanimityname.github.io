@@ -1,5 +1,5 @@
 ---
-permalink: 	Books/
+permalink: 	Books/the-power-of-now
 layout: 	review
 title: 	"The Power of Now Review"
 author: 	"Eckhart Tolle"
